@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class employee {
 
-    @GetMapping
+    @GetMapping("/home")
     public String greeting(HttpServletRequest request) {
         return "Welcome to My Project : " + request.getSession().getId() ;
     }
